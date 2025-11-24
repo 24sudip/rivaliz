@@ -1,0 +1,790 @@
+@media (max-width: 575.98px) {
+    .quikctech-login-signup ul {
+	display: flex;
+	justify-content: center !important;
+	gap: 37px;
+	align-items: center;
+}
+    #quicktech-ex-st{
+        height: 100% !important;
+    }
+    .quikctech-ebook-img img {
+        height: 179px;
+    }
+    .quikctech-main-headd h1 {
+        font-size: 33px;
+        font-weight: 600;
+    }
+    .quikctech-desktop-nav-logo img {
+        height: 42px;
+    }
+    .quicktech-ban-text {
+        padding: 6px;
+    }
+    .quicktech-ban-text h3 {
+        font-size: 33px;
+        font-weight: 600;
+    }
+    .quikctech-ban-img img {
+        height: 309px;
+    }
+    .quikctech-main-hea {
+        padding: 0;
+    }
+    .quicktech-course-innerr {
+        height: 165px;
+   
+    }
+    .quicktech-course-textt h3 {
+        padding-top: 16px;
+        font-size: 20px !important;
+        font-weight: 600 !important;
+    }
+    .quikctech-main-head h1 {
+        font-size: 26px;
+        font-weight: 600;
+    }
+    .quicktech-why-inner {
+        padding: 11px;
+    }
+    .quikctech-why-img img {
+        height: 180px;
+    }
+    .quicktech-teacher-text {
+        padding: 0;
+    }
+    .quicktech-teacher-text h1 {
+        font-size: 27px;
+    }
+    .quicktech-teacher-text a {
+        font-size: 16px;
+    }
+    .quikctech-teacher-img img {
+        height: 300px;
+    }
+    .quikctech-testi-inner h1{
+        font-size: 20px;
+    }
+    .quikctech-testi-person {
+        padding-bottom: 63px;
+    }
+    #quicktech-testimonial {
+ 
+        padding: 58px 0;
+    
+    }
+    .quicktech-key-img{
+        text-align: center;
+    }
+    .quikctech-footer-main h3 {
+        color: #ffffff8f;
+        font-size: 20px;
+    }
+
+/* login */
+#quikctech-login {
+	background: linear-gradient(to bottom, white 58%, #2c533c 44%);
+	padding: 0;
+}
+#quikctech-register {
+	background: linear-gradient(to bottom, white 55%, #2c533c 44%);
+	padding: 0;
+}
+.quikctech-sign-in-img{
+    padding-top: 70px;
+}
+.quicktech-sign-in-img-inner {
+	padding: 0;
+}
+.quikctch-login-inner {
+	padding: 0;
+}
+.quikctech-img-text h3 {
+	font-size: 25px;
+	
+}
+.quikctech-img-text h4 {
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 20px 0;
+}
+/* login */
+
+
+/* teacher */
+.quikctech-teachers-head h1 {
+	font-size: 25px;
+	font-weight: 600;
+}
+#quikctech-teachers-title {
+	padding: 126px 0;
+	position: relative;
+}
+.quikctech-teachers-head h5{
+    font-size: 14px;
+}
+.quikctech-teachers-head {
+	bottom: 42px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	color: white;
+}
+.quikctech-teacher-details-img img {
+	height: 300px;
+}
+.quicktech-tecaher-details-contact ul li a {
+	color: black;
+	font-weight: 600;
+	font-size: 19px;
+}
+.quicktech-teacher-details-all-content {
+	padding: 0;
+}
+.quicktech-education {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+}
+.quicktech-education {
+	background-color: #f7f7f7;
+	padding: 40px 15px;
+	border-radius: 10px;
+}
+.quikctech-border {
+	border-right: none !important;
+	padding-right: 80px;
+}
+/* teacher */
+
+/*  course details  */
+.quicktech-course-details-inner h1 {
+	font-weight: 600;
+	font-size: 22px;
+	padding-bottom: 15px;
+}
+.quicktech-course-details-inner img {
+	height: 210px;
+}
+.quikctech-nav-course-link{
+    font-size: 12px;
+}
+.quicktech-acc-head{
+    font-size: 15px;
+}
+.quicktech-curriculm p {
+	font-size: 17px;
+	color: rgba(0, 0, 0, 0.644);
+}
+.quicktech-description-course p {
+	font-size: 17px;
+	color: rgba(0, 0, 0, 0.644);
+}
+.quikctech-inscrutor-img img {
+	height: 300px !important;
+}
+/*  course details */
+
+/* event */
+.quikctech-dett li {
+	color: white;
+	font-size: 13px;
+}
+.quikctech-event-date h5 {
+	width: 40px;
+	height: 40px;
+	background-color: #1865f2;
+	text-align: center;
+	line-height: 19px;
+	color: white;
+	border-radius: 5px;
+	font-size: 14px;
+}
+.quikctech-event-text h4 {
+	color: white;
+	padding-top: 5px;
+	transition: 0.4s ease;
+	font-size: 17px;
+}
+.quikctech-event-inner {
+	background-color: #002147;
+	padding: 30px;
+	color: white;
+	height: 325px;
+	overflow-y: auto;
+}
+.quicktech-event-img img {
+	height: 280px;
+}
+/* event */
+.quikctech-event-img img {
+	height: 192px;
+}
+
+.quicktech-event-d-img img {
+	height: 210px;
+}
+.quicktech-event-d-text h1 {
+	padding-top: 20px;
+	font-weight: 600;
+	font-size: 24px;
+}
+
+/* checkout */
+.quicktech-form-group textarea {
+	border-radius: 30px;
+	height: 63px;
+	border: 1px solid #d1d1d1;
+	padding: 10px 20px;
+	font-size: 14px;
+	width: 100%;
+}
+
+#quicktech-bottom-nav{
+    display: block;
+    }
+    
+    .quikctech-videos-main iframe {
+        width: 100% !important;
+        height: 197px;
+    }
+
+    /* exams */
+    .quikctech-daily-sets h4 {
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    .quikctech-share ul li {
+        font-size: 16px;
+    }
+    .quikctech-daily-main {
+        align-items: baseline;
+    }
+    .quikctech-text-exam-main h5 {
+        font-size: 14px;
+        padding: 4px 20px;
+        background-color: #ddd;
+        color: black;
+        width: max-content;
+        border-radius: 20px;
+    }
+    .quicktech-exam-time ul li {
+        font-size: 14px;
+    }
+
+
+    /* exams */
+
+    .quikctech-mob-padding{
+        padding-top: 20px !important;
+    }
+
+    .quikctech-course-main-profile {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        background-color: #f7f7f7;
+        border-radius: 5px;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .quicktech-q-heading{
+        font-size: 13px;
+    }
+    .quicktech-ic {
+        color: black;
+        font-family: "Noto Sans", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 766.98px) {
+    #quicktech-ex-st{
+        height: 100% !important;
+    }
+    .quikctech-ebook-img img {
+        height: 150px;
+    }
+    .quikctech-desktop-nav-logo img {
+        height: 45px;
+    }
+    .quicktech-ban-text {
+        padding: 6px;
+    }
+    .quicktech-ban-text h3 {
+        font-size: 33px;
+        font-weight: 600;
+    }
+    .quikctech-ban-img img {
+        height: 480px;
+    }
+    .quikctech-main-hea {
+        padding: 0;
+    }
+    .quicktech-course-innerr {
+        height: 165px;
+   
+    }
+    .quicktech-course-textt h3 {
+        padding-top: 16px;
+        font-size: 20px !important;
+        font-weight: 600 !important;
+    }
+    .quikctech-main-head h1 {
+        font-size: 26px;
+        font-weight: 600;
+    }
+    .quicktech-why-inner {
+        padding: 11px;
+    }
+    .quikctech-why-img img {
+        height: 180px;
+    }
+    .quicktech-teacher-text {
+        padding: 0;
+    }
+    .quicktech-teacher-text h1 {
+        font-size: 27px;
+    }
+    .quicktech-teacher-text a {
+        font-size: 16px;
+    }
+    .quikctech-teacher-img img {
+        height: 400px;
+    }
+    .quikctech-testi-inner h1{
+        font-size: 20px;
+    }
+    .quikctech-testi-person {
+        padding-bottom: 63px;
+    }
+    #quicktech-testimonial {
+ 
+        padding: 58px 0;
+    
+    }
+    /* .quicktech-key-img{
+        text-align: center;
+    } */
+    .quicktech-key-img img {
+        height: 19px;
+    }
+    .quikctech-footer-main h3 {
+        color: #ffffff8f;
+        font-size: 20px;
+    }
+    .quicktech-course-text h3 {
+        font-weight: 600;
+        font-size: 16px;
+        padding-top: 10px;
+        color: black;
+    }
+
+    .quikctech-enroll-btn p {
+        font-size: 17px;
+        font-weight: 600;
+        color: black;
+    }
+
+    .quikctech-entroll {
+        padding: 6px 14px;
+        font-size: 13px;
+    }
+    .quikctech-course-img img {
+        height: 142px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+    .quicktech-course-innerr {
+        height: 215px;
+    }
+
+    /* login */
+    #quikctech-login {
+        background: linear-gradient(to bottom, white 54%, #2c533c 44%);
+        padding: 0;
+    }
+    #quikctech-register {
+        background: linear-gradient(to bottom, white 50%, #2c533c 44%);
+        padding: 0;
+    }
+    .quikctech-sign-in-img{
+        padding-top: 70px;
+    }
+
+.quicktech-sign-in-img-inner {
+	padding: 0;
+}
+.quikctch-login-inner {
+	padding: 0;
+}
+.quikctech-img-text h3 {
+	font-size: 25px;
+	
+}
+
+.quikctech-img-text h4 {
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 20px 0;
+}
+
+/* login */
+/* teacher */
+.quikctech-teachers-head h1 {
+	font-size: 25px;
+	font-weight: 600;
+}
+
+#quikctech-teachers-title {
+	padding: 126px 0;
+	position: relative;
+}
+
+.quikctech-teachers-head h5{
+    font-size: 14px;
+}
+.quikctech-teachers-head {
+	bottom: 42px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	color: white;
+}
+.quikctech-teacher-details-img img {
+	height: 300px;
+}
+.quicktech-tecaher-details-contact ul li a {
+	color: black;
+	font-weight: 600;
+	font-size: 19px;
+}
+.quicktech-teacher-details-all-content {
+	padding: 0;
+}
+.quicktech-education {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+}
+.quicktech-education {
+	background-color: #f7f7f7;
+	padding: 40px 15px;
+	border-radius: 10px;
+}
+.quikctech-border {
+	border-right: none !important;
+	padding-right: 80px;
+}
+/* teacher */
+
+/*  course details  */
+.quicktech-course-details-inner h1 {
+	font-weight: 600;
+	font-size: 22px;
+	padding-bottom: 15px;
+}
+.quicktech-course-details-inner img {
+	height: 260px;
+}
+.quikctech-nav-course-link{
+    font-size: 12px;
+}
+.quicktech-acc-head{
+    font-size: 15px;
+}
+.quicktech-curriculm p {
+	font-size: 17px;
+	color: rgba(0, 0, 0, 0.644);
+}
+.quicktech-description-course p {
+	font-size: 17px;
+	color: rgba(0, 0, 0, 0.644);
+}
+.quikctech-inscrutor-img img {
+	height: 300px !important;
+}
+.quikctech-inscrutor-img img {
+	height: 159px !important;
+}
+.quikctech-det li {
+	font-weight: 600;
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.603);
+}
+/*  course details */
+
+.quicktech-event-d-img img {
+	height: 305px;
+}
+#quicktech-bottom-nav{
+    display: block;
+    }
+
+    .quikctech-videos-main iframe {
+        width: 100% !important;
+        height: 146px;
+    }
+    .quicktech-ebook-text h4 {
+        font-size: 23px;
+        color: black;
+        font-weight: 600;
+        padding-top: 10px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 991.98px) {
+    #quicktech-ex-st{
+        height: 100% !important;
+    }
+    .quikctech-ebook-img img {
+        height: 203px;
+    }
+    .quikctech-desktop-nav-logo img {
+        height: 50px;
+    }
+    .quicktech-ban-text {
+        padding: 6px;
+    }
+    .quicktech-ban-text h3 {
+        font-size: 33px;
+        font-weight: 600;
+    }
+    .quikctech-ban-img img {
+        height: 480px;
+    }
+    .quikctech-main-hea {
+        padding: 0;
+    }
+    .quicktech-course-innerr {
+        height: 165px;
+   
+    }
+    .quicktech-course-textt h3 {
+        padding-top: 16px;
+        font-size: 20px !important;
+        font-weight: 600 !important;
+    }
+    .quikctech-main-head h1 {
+        font-size: 26px;
+        font-weight: 600;
+    }
+    .quicktech-why-inner {
+        padding: 11px;
+    }
+    .quikctech-why-img img {
+        height: 180px;
+    }
+    .quicktech-teacher-text {
+        padding: 0;
+    }
+    .quicktech-teacher-text h1 {
+        font-size: 27px;
+    }
+  .quicktech-teacher-text a {
+        font-size: 16px;
+    }
+    .quikctech-teacher-img img {
+        height: 326px;
+    }
+    .quikctech-testi-inner h1{
+        font-size: 20px;
+    }
+    .quikctech-testi-person {
+        padding-bottom: 63px;
+    }
+    #quicktech-testimonial {
+ 
+        padding: 58px 0;
+    
+    }
+    /* .quicktech-key-img{
+        text-align: center;
+    } */
+    .quicktech-key-img img {
+        height: 19px;
+    }
+    
+    .quikctech-footer-main h3 {
+        color: #ffffff8f;
+        font-size: 20px;
+    }
+
+    .quicktech-course-text h3 {
+        font-weight: 600;
+        font-size: 16px;
+        padding-top: 10px;
+        color: black;
+    }
+
+    .quikctech-enroll-btn p {
+        font-size: 17px;
+        font-weight: 600;
+        color: black;
+    }
+    .quikctech-entroll {
+        padding: 6px 14px;
+        font-size: 13px;
+    }
+    .quikctech-course-img img {
+        height: 142px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+
+    .quicktech-course-innerr {
+        height: 281px;
+    }
+
+    .quicktech-overview-inner {
+        flex-direction: column;
+    }
+
+    /* login */
+    #quikctech-login {
+        background: linear-gradient(to bottom, white 49%, #2c533c 44%);
+        padding: 0;
+    }
+
+    #quikctech-register {
+        background: linear-gradient(to bottom, white 47%, #2c533c 44%);
+        padding: 0;
+    }
+    .quikctech-sign-in-img{
+        padding-top: 70px;
+    }
+
+.quicktech-sign-in-img-inner {
+	padding: 0;
+}
+.quikctch-login-inner {
+	padding: 0;
+}
+.quikctech-img-text h3 {
+	font-size: 25px;
+	
+}
+.quikctech-img-text h4 {
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 20px 0;
+}
+/* login */
+
+
+/* teacher */
+
+.quikctech-teacher-details-img img {
+	height: 190px;
+}
+.quicktech-education {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+}
+.quicktech-education {
+	background-color: #f7f7f7;
+	padding: 40px 15px;
+	border-radius: 10px;
+}
+.quikctech-border {
+	border-right: none !important;
+	padding-right: 80px;
+}
+/* teacher */
+
+/* event */
+.quikctech-dett li {
+	color: white;
+	font-size: 13px;
+}
+.quikctech-event-date h5 {
+	width: 40px;
+	height: 40px;
+	background-color: #1865f2;
+	text-align: center;
+	line-height: 19px;
+	color: white;
+	border-radius: 5px;
+	font-size: 14px;
+}
+.quikctech-event-text h4 {
+	color: white;
+	padding-top: 5px;
+	transition: 0.4s ease;
+	font-size: 17px;
+}
+.quikctech-event-inner {
+	background-color: #002147;
+	padding: 30px;
+	color: white;
+	height: 325px;
+	overflow-y: auto;
+}
+.quicktech-event-img img {
+	height: 326px;
+}
+/* event */
+.quicktech-event-d-text h1 {
+	padding-top: 20px;
+	font-weight: 600;
+	font-size: 33px;
+}
+.quicktech-course-details-inner img {
+	height: 230px;
+}
+.quikctech-in-cour {
+	height: 486px;
+	overflow-y: auto;
+}
+
+.quikctech-pass-score {
+	padding: 9px;
+	background-color: #f7f7f7;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
+	padding-bottom: 0 !important;
+}
+}
+
+
+@media (min-width: 992px) and (max-width: 1400px) {
+    .quicktech-key-img img {
+        height: 17px;
+    }
+    .quicktech-course-innerr {
+        height: 237px;  
+    }
+    .quikctech-desktop-nav-logo img {
+        height: 44px;
+    }
+    .quicktech-event-d-text h1 {
+        padding-top: 20px;
+        font-weight: 600;
+        font-size: 33px;    
+    }
+    .quikctech-in-cour {
+        height: 500px;
+        overflow-y: auto;
+    }
+    .quikctech-ebook-img img {
+        height: 190px;
+    }
+    .quicktech-exam-start {
+        padding: 19px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f7f7f7;
+    }
+}

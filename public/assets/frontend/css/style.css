@@ -1,0 +1,2510 @@
+/* common css start */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PT Sans", serif;
+}
+body{
+    overflow-x: hidden;
+    font-family: "PT Sans", serif;
+
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+img{
+    vertical-align: middle;
+}
+
+.pt-100{
+    padding-top: 100px !important;
+}
+
+/* common css end */
+
+/* desktop nav */
+.quicktech-desktop-navbar {
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+  z-index: 999;
+  width: 100%;
+  background-color: white;
+  }
+.navbar-nav{
+    margin-right: 21px;
+}
+  .nav-link{
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.705);
+    transition: 0.4s ease;
+    font-size: 14px;
+  }
+  .nav-link:hover{
+   color: #1865f2;
+ 
+  }
+ 
+  #exploreButton {
+	font-size: 16px;
+	cursor: pointer;
+	font-family: "PT Sans", serif;
+	color: #1865f2;
+	border: none;
+	/* border-radius: 5px; */
+	background-color: transparent;
+	font-size: 17px;
+    font-weight: 600;
+}
+  
+  #dropdown {
+    position: fixed;
+    top: 63px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f7f8fa;
+    display: none;
+    z-index: 1000;
+    overflow-y: auto;
+    padding: 20px;
+  }
+  
+  #dropdown .dropdown-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  #dropdown .dropdown-content div {
+    flex: 1 1 25%; /* Adjust column width */
+    min-width: 200px;
+  }
+  
+  #dropdown .dropdown-content h3 {
+	font-size: 16px;
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+  
+  #dropdown .dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #dropdown .dropdown-content li {
+    margin: 5px 0;
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  .visible {
+    display: block !important;
+  }
+
+  .quikctech-ex-search-inner{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  .quikctech-search input {
+	padding: 6px;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	padding-left: 29px;
+}
+.quikctech-search{
+    position: relative;
+}
+.quikctech-search button {
+	position: absolute;
+	left: 7px;
+	border: none;
+	background-color: transparent;
+	top: 7px;
+}
+
+.quikctech-desktop-nav-logo{
+   font-size: 19px;
+   color: black;
+   font-weight: 600;
+}
+
+.quikctech-login-signup ul {
+	display: flex;
+	justify-content: end;
+	gap: 37px;
+	align-items: center;
+}
+
+.quikctech-login-signup ul li a{
+   color: #1865f2;
+   font-size: 17px;
+   font-weight: 600;
+
+}
+
+.quicktech-sign-up {
+  position: relative;
+  display: inline-block;
+  padding: 6px 20px;
+  color: black !important;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid #1865f2;
+  border-radius: 5px;
+  background-color: white;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.quicktech-sign-up::before {
+  content: '';
+  position: absolute;
+  top: 100%; /* Start off-screen below the button */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1865f2;
+  z-index: -1;
+  transition: top 0.3s ease;
+}
+
+.quicktech-sign-up:hover {
+  color: white !important;
+  border-color: #1865f2;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+}
+.quicktech-sign-up a:hover{
+  color: white !important;
+}
+.quicktech-sign-up:hover::before {
+  top: 0; /* Slide the blue background in from the bottom */
+}
+
+.quicktech-sign-up a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.dropdown-content li a {
+	color: #00000094;
+}
+
+.quicktech-search {
+	position: relative;
+	margin-left: 11px;
+}
+
+.quicktech-search-icon {
+	position: absolute;
+	left: 6px;
+	top: 7px;
+	border: none;
+	background-color: transparent;
+}
+.quicktech-search input{
+  padding-left: 28px;
+}
+/* desktop nav */
+
+/* login */
+#quikctech-login{
+    background: linear-gradient(to right, #2c533c 50%, white 50%);
+    padding: 50px;    
+}
+#quikctech-register{
+  background: linear-gradient(to right, #2c533c 50%, white 50%);
+  padding: 50px;    
+}
+#quikctech-regsiter{
+  background: linear-gradient(to right, #2c533c 50%, white 50%);
+  padding: 50px;    
+}
+.quikctch-login-inner {
+	padding: 27px 126px;
+}
+.quikctech-login-with button{
+    padding: 15px;
+}
+.quikctech-login-with button img{
+    height: 23px;
+}
+.form-label{
+    font-weight: 600;
+}
+
+.quicktech-sign-in-img-inner{
+    padding: 24px 120px;
+}
+.quikctech-img-text h3{
+    font-size: 30px;
+  color: white;
+  text-align: center;
+}
+.quikctech-img-text h4{
+    font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+.quikctech-img-text p{ 
+  color: white;
+  text-align: center;
+}
+/* login */
+
+/* footer */
+
+#quicktech-footer {
+	background-color: #0b2149;
+	padding: 30px 0;
+	padding-bottom: 5px !important;
+}
+
+ .quikctech-footer-main h3 {
+	color: #ffffff8f;
+	font-size: 22px;
+}
+.quikctech-footer-inner{
+    padding: 0 20px;
+}
+.quikctech-footer-inner ul li a{
+    color: rgba(255, 255, 255, 0.877);
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.quikctech-footer-inner ul li a:hover{
+    border-bottom: 1px solid white;
+    color: white;
+}
+.quikctech-footer-inner h6{
+    color: rgba(255, 255, 255, 0.418);
+    font-size: 15px;
+    font-weight: 600;
+    
+}
+.quikctech-footer-inner ul li a img{
+    width: 114px;
+    margin: 10px 0;
+}
+.quikctech-copy-right p{
+    color: rgba(255, 255, 255, 0.74);
+    font-size: 14px;
+
+}
+
+.quicktech-social ul{
+  display: flex;
+  gap: 20px;
+}
+.quicktech-social ul li a{
+  color: white;
+  font-size: 20px;
+  transition: 0.2s ease;
+}
+.quicktech-social ul li a:hover{
+  font-size: 25px;
+}
+
+
+
+.quicktech-social ul li a .fa-facebook {
+  color: #4267B2; /* Facebook blue */
+}
+
+.quicktech-social ul li a .fa-youtube {
+  color: #FF0000; /* YouTube red */
+}
+
+.quicktech-social ul li a .fa-instagram {
+  color: #C13584; /* Instagram gradient color (base pink) */
+}
+
+.quicktech-social h5{
+  color: white;
+
+}
+/* footer */
+
+/* register */
+.quikctech-tabs{
+    border: 1px solid #ddd;
+  width: max-content;
+  border-radius: 5px;
+}
+
+.d-none {
+    display: none;
+  }
+
+  .quikctech-sign-up-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .quikctech-sign-up-btn a{
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .quikctech-pass-text{
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.486);
+    font-weight: 400;
+  }
+/* register */
+
+/* index */
+.quicktech-ban-text h3{
+   font-size: 39px;
+   font-weight: 600;
+}
+
+.quicktech-ban-text p{
+  padding: 20px 0;
+  font-size: 18px;
+}
+
+.quicktech-ban-text{
+  padding: 85px 43px;
+}
+.ban-btn{
+  display: flex;
+  gap: 15px;
+}
+.ban-btn a {
+  position: relative;
+  display: inline-block;
+  padding: 7px 52px;
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid #1865f2;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1;
+  background-color: transparent;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.ban-btn a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #1865f2;
+  z-index: -1;
+  transition: left 0.3s ease;
+}
+
+.ban-btn a:hover {
+  color: white;
+  border-color: #1865f2;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+.ban-btn a:hover::before {
+  left: 0;
+}
+
+.quikctech-ban-img img{
+  height: 480px;
+}
+.quikctech-main-head h1{
+  font-size: 36px;
+  font-weight: 600;
+}
+.quicktech-why-inner{
+  padding: 30px 53px;
+}
+.quikctech-why-img img{
+  height: 145px;
+}
+.quikctech-why-text h5{
+  font-size: 23px;
+}
+.quikctech-why-text p{
+  color: rgba(0, 0, 0, 0.678);
+}
+.quicktech-teacher-text{
+  padding: 36px 64px;
+}
+
+.quicktech-teacher-text span{
+  color: #00000059;
+}
+.quicktech-teacher-text h1 {
+	font-size: 43px;
+	padding: 15px 0;
+	font-weight: 600;
+}
+.quicktech-teacher-text p{
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+.quicktech-teacher-text a {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  padding: 10px 40px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 5px;
+  background-color: white;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease;
+  border: 2px solid #1865f2;
+}
+
+.quicktech-teacher-text a::before,
+.quicktech-teacher-text a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background-color: #1865f2;
+  z-index: -1;
+  transition: left 0.3s ease, right 0.3s ease;
+}
+
+.quicktech-teacher-text a::before {
+  left: -50%; /* Start off-screen from the left */
+}
+
+.quicktech-teacher-text a::after {
+  right: -50%; /* Start off-screen from the right */
+}
+
+.quicktech-teacher-text a:hover {
+  color: white; /* Change text color on hover */
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+.quicktech-teacher-text a:hover::before {
+  left: 0; /* Move in from the left */
+}
+
+.quicktech-teacher-text a:hover::after {
+  right: 0; /* Move in from the right */
+}
+
+.quikctech-teacher-img img{
+  height: 450px;
+}
+
+/* testimonial */
+#quicktech-testimonial{
+  background-color: #f7f7f7;
+  padding: 100px 0;
+  margin: 40px 0;
+}
+
+.quikctech-testi-person{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+}
+.quikctech-testi-person img{
+
+    height: 128px;
+  
+}
+.quikctech-testi-person h5{
+  font-size: 18px;
+  font-weight: 600;
+  text-align: end;
+}
+.quikctech-testi-person h5 span{
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.carousel-indicators [data-bs-target] {
+	box-sizing: content-box;
+	flex: 0 1 auto;
+	width: 30px;
+	height: 3px;
+	padding: 0;
+	margin-right: 3px;
+	margin-left: 3px;
+	text-indent: -999px;
+	cursor: pointer;
+	background-color: #1865f2;
+	background-clip: padding-box;
+	border: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	opacity: .5;
+	transition: opacity .6s ease;
+}
+.carousel-indicators .active {
+	opacity: 1 !important;
+}
+/* testimonial */
+
+/* join */
+.quikctech-join-btn {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 82px;
+}
+
+
+.quikctech-join-btn a {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  padding: 10px 40px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 5px;
+  background-color: white;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease;
+  border: 2px solid #1865f2;
+}
+
+.quikctech-join-btn a::before,
+.quikctech-join-btn a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background-color: #1865f2;
+  z-index: -1;
+  transition: left 0.3s ease, right 0.3s ease;
+}
+
+.quikctech-join-btn a::before {
+  left: -50%; /* Start off-screen from the left */
+}
+
+.quikctech-join-btn a::after {
+  right: -50%; /* Start off-screen from the right */
+}
+
+.quikctech-join-btn a:hover {
+  color: white; /* Change text color on hover */
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+.quikctech-join-btn a:hover::before {
+  left: 0; /* Move in from the left */
+}
+
+.quikctech-join-btn a:hover::after {
+  right: 0; /* Move in from the right */
+}
+
+#quicktech-join {
+	margin-top: 81px;
+	margin-bottom: 40px;
+}
+/* join */
+
+/* supporters */
+#quicktech-key-supperters {
+	background-color: #f7f7f7;
+	padding: 35px 0;
+}
+.gapp{
+  row-gap: 30px;
+}
+
+.quicktech-key-img img{
+  height: 27px;
+}
+/* supporters */
+
+/* overview */
+.quicktech-overview-inner{
+  display: flex;
+  gap: 20px;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: -1px 0px 4px -2px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -1px 0px 4px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 0px 4px -2px rgba(0,0,0,0.75);
+  transition: 0.1s ease;
+  cursor: pointer;
+}
+.quicktech-overview-inner:hover{
+  box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+}
+
+.quikctech-overview-img img{
+  height: 60px;
+}
+
+.quikctech-overview-text h6{
+  font-size: 21px;
+  font-weight: 600;
+}
+/* overview */
+
+/* courses */
+.quicktech-course-inner{
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: -1px 0px 4px -2px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -1px 0px 4px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 0px 4px -2px rgba(0,0,0,0.75);
+}
+
+.quikctech-course-img img {
+	height: 210px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+.quicktech-course-text span{
+  color: rgba(0, 0, 0, 0.692);
+  font-size: 17px;
+  margin-top: 10px;
+}
+.quicktech-course-text h3{
+  font-weight: 600;
+  font-size: 23px;
+  padding-top: 10px;
+  color: black;
+}
+.quikctech-enroll-btn{
+  display: flex;
+  justify-content: space-between;
+  align-items: first baseline;
+}
+
+.quikctech-entroll {
+  position: relative;
+  display: inline-block;
+  padding: 6px 25px;
+  color: black;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 5px;
+  background-color: white;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease;
+  border: 2px solid #1865f2;
+}
+
+.quikctech-entroll::before,
+.quikctech-entroll::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background-color: #1865f2; /* The new color for the hover effect */
+  z-index: -1;
+  transition: left 0.3s ease, right 0.3s ease;
+}
+
+.quikctech-entroll::before {
+  left: -50%; /* Start off-screen from the left */
+}
+
+.quikctech-entroll::after {
+  right: -50%; /* Start off-screen from the right */
+}
+
+.quikctech-entroll:hover {
+  color: white;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+.quikctech-entroll:hover::before {
+  left: 0; /* Move in from the left */
+}
+
+.quikctech-entroll:hover::after {
+  right: 0; /* Move in from the right */
+}
+
+.quikctech-enroll-btn p{
+  font-size: 21px;
+  font-weight: 600;
+  color: black;
+}
+.gap{
+  row-gap: 20px;
+}
+
+.quikctech-view-all-btn a{
+  padding: 6px 25px;
+  background-color: #1865f2;
+  color: white;
+  border-radius: 5px;
+
+}
+
+.quicktech-course-text h5{
+  padding-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.quicktech-course-text img {
+	height: 17px;
+	margin-top: -5px;
+}
+
+.quikctech-mentor-img img{
+  height: 178px;
+}
+/* courses */
+.swiper {
+  width: 100%;
+  height: auto;
+}
+.swiper-button-next::after, .swiper-button-prev::after {
+	font-family: swiper-icons;
+	font-size: 30px !important;
+	text-transform: none !important;
+	letter-spacing: 0;
+	font-variant: initial;
+	line-height: 1;
+}
+
+.quikctech-main-headd h1{
+  font-size: 44px;
+  font-weight: 600;
+}
+.quikctech-main-hea{
+  padding: 20px 30px;
+}
+.quikctech-main-hea p{
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.589);
+}
+#quicktech-popular-courses{
+  margin-top: 80px;
+}
+/* index */
+
+.quicktech-course-innerr {
+	position: relative;
+	/* padding: 20px; */
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	box-shadow: -1px 0px 4px -2px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: -1px 0px 4px -2px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: -1px 0px 4px -2px rgba(0, 0, 0, 0.75);
+	overflow: hidden;
+	height: 280px;
+	perspective: 1000px;
+	cursor: pointer;
+}
+
+.quicktech-course-innerr .quikctech-mentorr-img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  transform-style: preserve-3d; /* Allow the content to rotate in 3D */
+  position: absolute;
+  backface-visibility: hidden; /* Hide content on the back */
+}
+
+.quicktech-course-innerr .quikctech-mentorr-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.quicktech-course-innerr .quicktech-course-textt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: #f7f7f7;
+  box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+}
+
+.quicktech-course-innerr:hover .quikctech-mentorr-img {
+  transform: rotateY(180deg); /* Flip the image */
+}
+
+.quicktech-course-innerr:hover .quicktech-course-textt {
+  opacity: 1; /* Show the content */
+}
+
+.quicktech-course-textt h5 {
+  padding-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.quicktech-course-textt img {
+  height: 17px;
+  margin-top: -5px;
+}
+.quicktech-course-textt h3{
+  padding-top: 20px;
+  font-size: 30px !important;
+  font-weight: 600 !important;
+}
+.quicktech-course-textt img {
+	height: 17px;
+	margin-top: -5px;
+}
+
+.quicktech-search-icon i{
+  color: black !important;
+}
+
+.quikctech-desktop-nav-logo img{
+  height: 50px;
+}
+
+/* all teacher */
+#quikctech-teachers-title {
+	padding: 220px 0;
+	position: relative;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #00000078;
+}
+
+.quikctech-teachers-head {
+	bottom: 79px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	color: white;
+}
+.quikctech-teachers-head h1{
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.quikctech-teacher-details-img img{
+   height: 350px;
+}
+.quicktech-tecaher-details-contact ul {
+	padding: 30px 0;
+	padding-bottom: 0;
+}
+.quicktech-tecaher-details-contact ul li{
+  padding-bottom: 15px;
+}
+.quicktech-tecaher-details-contact ul li a{
+  color: black;
+  font-weight: 600;
+  font-size: 22px;
+}
+.quikctech-det{
+  display: flex;
+  gap: 15px;
+  padding-top: 20px;
+}
+.quikctech-det li{
+  font-weight: 600;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.603);
+}
+.quicktech-teacher-details-all-content h1{
+  font-size: 40px;
+  font-weight: 600;
+}
+.quicktech-teacher-details-all-content span{
+  color: tomato;
+}
+.quicktech-teacher-details-all-content{
+  padding: 0 40px;
+}
+.quicktech-teacher-details-all-content p{
+  color: rgba(0, 0, 0, 0.651);
+}
+.quicktech-education{
+  display: flex;
+  
+  justify-content: space-around;
+}
+.quicktech-education ul h4{
+      font-weight: 600;
+      padding-bottom: 10px;
+}
+.quicktech-education ul li{
+  font-size: 18px;
+  padding-bottom: 15px;
+}
+.quicktech-education ul li span{
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.582);
+}
+.quicktech-education{
+  background-color: #f7f7f7;
+  padding: 40px 0;
+  border-radius: 10px;
+}
+.quikctech-border{
+  border-right: 1px solid #ddd;
+  padding-right: 80px;
+}
+.quikctech-dd{
+  align-items: center;
+}
+
+.quicktech-view-btn {
+  position: relative;
+  display: inline-block;
+  padding: 6px 20px;
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid #1865f2;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1;
+  background-color: transparent;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.quicktech-view-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #1865f2;
+  z-index: -1;
+  transition: left 0.3s ease;
+}
+
+.quicktech-view-btn:hover {
+  color: white;
+  border-color: #1865f2;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+.quicktech-view-btn:hover::before {
+  left: 0;
+}
+#skillLevel{
+  padding: 7px 32px;
+
+}
+
+/* all teacher */
+
+/* course details */
+.quicktech-course-details-inner h1{
+  font-weight: 600;
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+.quicktech-course-details-inner img{
+  height: 450px;
+}
+
+.quicktech-tabs-course li{
+  border: 1px solid #ddd;
+}
+
+.quikctech-nav-course-link:hover{
+      border-bottom: none !important;
+}
+.quikctech-nav-course-link{
+  border-radius: 0 !important;
+}
+.quikctech-nav-course-link.active {
+	color: var(--bs-nav-pills-link-active-color);
+	background-color: #1865f2 !important;
+}
+
+.description-check {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns of equal width */
+  gap: 16px; /* Space between the items (adjust as needed) */
+}
+.quicktech-description-course{
+  padding-top: 20px;
+}
+.quicktech-description-course p{
+  font-size: 19px;
+  color: rgba(0, 0, 0, 0.644);
+}
+
+.description-check{
+  padding-top: 20px;
+}
+.description-check li i {
+	width: 20px;
+	height: 20px;
+	background-color: #1865f2;
+	color: white;
+	text-align: center;
+	line-height: 20px;
+	border-radius: 50%;
+	font-size: 11px;
+}
+.quicktech-curriculm{
+  padding-top: 20px;
+}
+.quicktech-curriculm p{
+  font-size: 19px;
+  color: rgba(0, 0, 0, 0.644);
+}
+.quicktech-acc-head{
+  font-weight: 600;
+  font-size: 17px;
+}
+.quikctech-inscrutor-img img{
+  height: 259px !important;
+}
+.quicktech-instructor{
+  padding-top: 20px;
+}
+.quikctech-instructor-details h3{
+  font-size: 25px;
+  font-weight: 600;
+}
+.quikctech-instructor-details h3 span{
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.568);
+}
+.quicktech-stars ul{
+  display: flex;
+  gap: 7px;
+
+}
+.quicktech-stars ul li i{
+  color: #fbb039;
+}
+.quicktech-rating{
+  color: rgba(0, 0, 0, 0.651);
+}
+.quikctech-instructor-details p{
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.63);
+  padding-top: 20px;
+
+}
+.quikctech-instructor-details{
+  padding: 10px;
+}
+.review-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.review-card .profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.review-card .stars i {
+  color: #ffc107;
+}
+.review-card .stars i.inactive {
+  color: #ddd;
+}
+.rating-summary {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.rating-stars i {
+  color: #ffc107;
+}
+.progress-bar {
+  background-color: #ffc107;
+}
+.rating-count {
+  font-weight: bold;
+  color: #002D62;
+}
+
+.course-card {
+	/* width: 300px; */
+	background: #ffffff;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	/* padding: 34px; */
+}
+.quikctech-f-inner{
+  padding: 34px;
+  padding-bottom: 0 !important;
+}
+.quikctech-pp {
+	padding: 34px;
+	padding-top: 1px !important;
+  background-color: #F0F4F9;
+}
+
+.course-title {
+  font-size: 25px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.course-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.course-list-item {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.course-list-item i {
+  font-size: 1rem;
+  color: #007bff;
+  margin-right: 10px;
+}
+
+.course-price {
+	text-align: center;
+	font-weight: bold;
+	font-size: 25px;
+	color: #343a40;
+	margin-bottom: 15px;
+	margin-top: 43px;
+}
+
+.course-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #1865f2;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.course-button:hover {
+  background-color: #f0ad4e;
+}
+.quikcteck-recent-img img{
+  width: 100px;
+}
+
+.quikctech-recent-details h4{
+  font-size: 19px;
+  font-weight: 600;
+  color: black;
+}
+.quikctech-recent-details h4 p{
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.596);
+  font-weight: 400;
+  padding-top: 5px;
+}
+.quicktech-recent-inner{
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f7f7f7a9;
+
+}
+.quikctech-enroll-btnn {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+.quikctech-enroll-btnn p{
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+}
+.quikctech-entrolll {
+	padding: 5px 15px;
+	background-color: #1865f2;
+	color: white;
+	border-radius: 5px;
+	font-size: 13px;
+}
+.quikctech-in-cour {
+	height: 450px;
+	overflow-y: auto;
+}
+.quicktech-recent-course h3{
+  font-weight: 600;
+}
+
+
+/* course details */
+
+
+
+/* event */
+.quikctech-event-inner {
+	background-color: #002147;
+	padding: 40px;
+	color: white;
+	height: 392px;
+	overflow-y: auto;
+}
+.quicktech-event-img img{
+  height: 392px;
+}
+.quikctech-event-date h5{
+  width: 60px;
+  height: 60px;
+  background-color: #1865f2;
+  text-align: center;
+  line-height: 29px;
+  color: white;
+  border-radius: 5px;
+}
+
+.quikctech-dett{
+  display: flex;
+  gap: 15px;
+}
+.quikctech-dett li{
+  color: white;
+}
+.quicktech-event-main{
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid #dddddd8a;
+  padding-bottom: 10px;
+}
+.quikctech-event-text h4{
+  color: white;
+  padding-top: 5px;
+  transition: 0.4s ease;
+}
+
+.quikctech-event-text h4:hover{
+  color: #1865f2; 
+}
+
+.quikctech-dettt{
+  display: flex;
+  gap: 15px;
+}
+
+.quikctech-dettt li {
+	color: black;
+	font-size: 13px;
+	padding-top: 10px;
+}
+
+.quikctech-all-event-inner{
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  box-shadow: 0px 0px 4px -2px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 4px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 4px -2px rgba(0,0,0,0.75);
+}
+
+.quikctech-all-event-text h5 {
+	font-size: 20px;
+	font-weight: 600;
+	padding: 9px 0;
+	color: black;
+}
+.quikctech-all-event-text p{
+  font-size: 17px;
+  color: #0000009c;
+}
+.two-line-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  line-height: 1.5;
+  max-height: calc(1.5em * 2); 
+}
+
+.quikctech-event-img img{
+  height: 209px;
+}
+.quicktech-event-d-img img{
+  height: 442px;
+}
+.quicktech-event-d-text h1{
+  padding-top: 20px;
+  font-weight: 600;
+}
+.quicktech-event-d-text p{
+  font-size: 17px;
+  color: #000000b2;
+}
+.quikctech-notice-re-img img {
+	width: 100px;
+	height: 72px;
+}
+.quikctech-recent-n-inner {
+	display: flex;
+	gap: 20px;
+	border: 1px solid #ddd;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #f7f7f7a3;
+	box-shadow: 0px 0px 4px -1px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0px 0px 4px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 4px -1px rgba(0,0,0,0.75);
+}
+
+.quicktech-recent-notice h3{
+  font-weight: 600;
+}
+.quicktech-notice-re h6{
+  font-weight: 600;
+  font-size: 17px;
+  color: black;
+}
+
+.quicktech-notice-re p {
+	color: black;
+	font-size: 12px;
+}
+.quicktech-recent-event-scroll {
+	height: 634px;
+	overflow-y: auto;
+}
+/* event */
+
+.quicktech-form-group {
+  margin-bottom: 15px;
+}
+
+.quicktech-form-control {
+  border-radius: 30px;
+  height: 40px;
+  border: 1px solid #d1d1d1;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+.quicktech-form-group textarea{
+  border-radius: 30px;
+  height: 48px;
+  border: 1px solid #d1d1d1;
+  padding: 10px 20px;
+  font-size: 14px;
+  width: 100%;
+}
+.quicktech-form-control:focus {
+  box-shadow: none;
+  border-color: #a8a8a8;
+}
+
+.quicktech-checkbox-label {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.quicktech-billing-head h4{
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.quicktech-checkbox-label {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.quicktech-hidden {
+  display: none;
+}
+.quicktech-shipping-head{
+  font-size: 24px;
+}
+
+.quicktech-order-card {
+	border: 1px solid #f7f7f7;
+	background-color: #f7f7f7;
+}
+
+.quicktech-order-title {
+  font-weight: bold;
+}
+
+.quicktech-order-table th,
+.quicktech-order-table td {
+  border: none;
+}
+
+.quicktech-payment-instructions {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.quicktech-place-order-btn {
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.quicktech-terms-label a {
+  text-decoration: none;
+}
+
+.quikctech-cou-inner{
+  display: flex;
+  width: 100%;
+}
+.quikctech-cou-inner input{
+  border-radius: 5px;
+
+}
+.quikctech-cou-inner button {
+	padding: 6px 20px;
+	background-color: #1865f2;
+	color: white;
+	font-weight: 600;
+	border: none;
+	border-radius: 5px;
+}
+
+.quikctech-videos-main iframe {
+	width: 100% !important;
+	height: 260px;
+}
+
+.quikctech-video-section h4{
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* mobile nav */
+#quicktech-bottom-nav {
+	background-color: white;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	z-index: 99999;
+  box-shadow: 0px -2px 5px -2px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px -2px 5px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px -2px 5px -2px rgba(0,0,0,0.75);
+padding: 10px 0;
+}
+#quicktech-bottom-nav{
+display: none;
+}
+
+.quikctech-nav-bottom a{
+  color: black;
+}
+
+/* mobile nav */
+
+/* podcast */
+.quikctech-podcast-inner{
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f7f7f7;
+  box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.75);
+  border-radius: 4px;
+   text-align: center; 
+}
+.quikctech-podcast-inner h4{
+  padding: 10px 0;
+   font-weight: 600;
+   font-size: 19px;
+}
+.quikctech-podcast-inner audio{
+  width: 100%;
+  border-radius: 5px;
+}
+.quikctech-podcast-inner img {
+	/* height: 184px; */
+	border-radius: 5px;
+	height: 300px;
+}
+.quicktech-share-podcast ul{
+  display: flex;
+  gap: 12px;
+}
+/* podcast */
+
+/* ebooks */
+.quicktech-ebooks-inner{
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: -1px 0px 4px -2px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -1px 0px 4px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 0px 4px -2px rgba(0,0,0,0.75);
+}
+
+.quicktech-ebook-text h4{
+  font-size: 28px;
+  color: black;
+  font-weight: 600;
+  padding-top: 10px;
+}
+.quicktech-ebook-text p{
+  color: #0009;
+}
+.quikctech-ebook-img img{
+  height: 230px;
+}
+/* pdf */
+.quicktech-frame {
+  width: 100%;
+  height: 700px;
+  border: 1px solid #000;
+  margin-bottom: 10px;
+}
+
+.quicktech-controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.quicktech-prev, .quicktech-next {
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+}
+
+.quicktech-prev:disabled, .quicktech-next:disabled {
+  background-color: #CCC;
+  cursor: not-allowed;
+}
+#toolbarContainer{
+  display: none;
+}
+
+.toolbarHorizontalGroup{
+  opacity: 0 !important;
+}
+.quikctech-pdff h4{
+  font-weight: 600;
+}
+/* pdf */
+/* ebooks */
+
+/* EXAM */
+
+.quicktech-exam-inner {
+	padding: 10px;
+	border: 1px solid #ddd;
+	background-color: #f7f7f7;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px -3px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0px 0px 5px -3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 5px -3px rgba(0,0,0,0.75);
+	position: relative;
+	transition: 0.2s ease;
+	padding-top: 23px;
+	height: 282px;
+}
+.quicktech-exam-inner:hover{
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+.quicktech-exam-img img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.quikctech-exam-text h5{
+  font-size: 15px;
+  color: black;
+}
+.quikctech-exam-text h4{
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+}
+
+.quiktech-stars img{
+  height: 22px;
+
+}
+.quiktech-stars p {
+	font-size: 14px;
+	color: black;
+	padding-top: 17px;
+	line-height: 14px;
+}
+
+.quicktech-published-date{
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+.quicktech-published-date p{
+  color: rgba(0, 0, 0, 0.651);
+  font-size: 12px;
+}
+
+.quikctech-exam-text span{
+  font-size: 14px;
+  padding: 3px 20px;
+  background-color: olivedrab;
+  border-radius: 20px;
+  color: white;
+}
+
+.quikctech-daily-main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quikctech-share ul{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.quikctech-ex-inner-details {
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px -3px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0px 0px 5px -3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 5px -3px rgba(0,0,0,0.75);
+	background-color: #f7f7f78f;
+}
+.quikctech-daily-sets h4{
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.quikctech-share ul li{
+  font-size: 20px;
+}
+
+.quikctech-text-exam-main h5{
+  font-size: 17px;
+  padding: 4px 20px;
+  background-color: #ddd;
+  color: black;
+  width: max-content;
+  border-radius: 20px;
+}
+
+.quikctech-text-exam-main p{
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.63);
+}
+.quicktech-exam-time ul li{
+  display: flex;
+  justify-content: space-between;
+}
+.quicktech-exam-time{
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.quicktech-exam-time ul li span{
+  color: #007BFF;
+   font-weight: 600;
+}
+.quicktech-exam-time ul li p{
+  color: black;
+   font-weight: 600;
+}
+
+.quicktech-exam-start {
+	padding: 35px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	background-color: #f7f7f7;
+}
+.quikctech-exam-start-inner h4 {
+	font-size: 34px;
+	font-weight: 600;
+	padding-bottom: 30px;
+	color: #000000a3;
+}
+/* EXAM */
+
+/* exam start */
+.quicktech-question {
+	background-color: gray;
+	padding: 20px 20px;
+	color: white;
+}
+.quicktech-progress {
+	margin-bottom: 18px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+	font-size: 20px !important;
+	background-color: #1865f2 !important;
+	color: white;
+}
+.quicktech-option {
+	margin-bottom: 10px;
+}
+#quicktech-preview {
+	display: none;
+}
+.quicktech-option-padding {
+	background-color: #f7f7f7;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#quicktech-nextBtn {
+	padding: 10px 20px;
+	margin-top: 20px;
+	background-color: #1865f2;
+	border: transparent;
+  color: white;
+}
+#quicktech-prevBtn {
+	padding: 10px 20px;
+	margin-top: 20px;
+	background-color: #1865f2;
+	border: transparent;
+  color: white;
+}
+#quicktech-nextBtn:hover, #quicktech-prevBtn:hover {
+	background-color: darkblue;
+	color: white;
+	transition: 0.4s;
+}
+#quicktech-submitBtn {
+	padding: 10px 20px;
+	margin-top: 20px;
+	background-color: #1865f2;
+	border: transparent;
+}
+#quicktech-submitBtn:hover {
+	background-color: #1865f2;
+	color: white;
+	transition: 0.4s;
+}
+#quicktech-confirmSubmitBtn {
+	padding: 10px 20px;
+	margin-top: 20px;
+	background-color: #1865f2;
+	border: transparent;
+}
+#quicktech-confirmSubmitBtn:hover {
+	background-color: darkblue;
+	color: white;
+	transition: 0.4s;
+}
+.quicktech-quiz-image {
+	width: 100%;
+}
+.quicktech-quiz-image img {
+	width: 100%;
+	border-radius: 10px;
+}
+.quicktech-input {
+	margin: 10px !important;
+}
+.quicktech-text-danger h5 {
+	color: black !important;
+}
+.quicktech-text-danger strong {
+	color: black !important;
+}
+
+#quicktech-timer{
+  font-weight: 600;
+  padding: 4px 20px;
+  background-color: red;
+  width: max-content;
+  margin: auto;
+  border-radius: 20px;
+  color: white;
+  font-size: 22px;
+}
+.quicktech-quesandans-head h1{
+  font-weight: 600;
+  color: white;
+}
+
+.quikctech-go-to-homepage a{
+  padding: 6px 20px;
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+}
+.quikctech-mob-padding{
+  padding-top: 40px;
+}
+
+.quicktech-quiz-result h5{
+  color: black;
+  font-weight: 600;
+}
+.quicktech-quiz-result p strong{
+  color: black;
+  font-weight: 600;
+}
+.quicktech-quiz-result p{
+  color: black;
+}
+.quikctech-quiz-pass img{
+  height: 75px;
+}
+
+
+.quikctech-pass-score {
+	padding: 26px;
+	background-color: #f7f7f7;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
+	padding-bottom: 16px !important;
+}
+/* exam start */
+
+/* profile */
+.quicktech-pro-img{
+  width: 70px;
+  height: 70px;
+}
+
+.quicktech-pro-dflex{
+  display: flex;
+  column-gap: 20px;
+}
+
+.quicktech-profile-name h5{
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: left;
+}
+.quicktech-profile-name h4{
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.quicktech-ic i{
+  font-size: 20px;
+
+}
+.quicktech-ic{
+  color: black;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+color: #1865f2;
+background-color: var(--bs-nav-tabs-link-active-bg);
+border-color: var(--bs-nav-tabs-link-active-border-color);
+}
+
+.nav-link:focus, .nav-link:hover {
+color: #1865f2;
+  transition: 0.4s;
+}
+
+.gapp{
+  row-gap: 20px;
+}
+
+.display-text{
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.quicktech-n-btn{
+  padding: 7px !important;
+}
+.quicktech-n-btn:hover{
+ background-color: #1865f2 !important;
+
+}
+
+.quicktech-card{
+  background-color: #f9f9f9 !important;
+}
+
+
+
+.quicktech-order{
+font-size: 20px;
+font-family: "Noto Sans", sans-serif;
+font-weight: 500;
+}
+.quicktech-border{
+  border: 1px solid rgba(0, 0, 0, 0.388);
+  border-style: dashed;
+}
+
+.quicktech-order-id{
+  font-size: 13px;
+  color: #1865f2;
+  font-family: "Noto Sans", sans-serif;
+font-weight: 500;
+}
+
+.quicktech-text-muted{
+      font-size: 11px;
+      font-family: "Noto Sans", sans-serif;
+font-weight: 400;
+}
+
+.qucktech--price{
+  font-size: 15px !important;
+  font-family: "Noto Sans", sans-serif;
+font-weight: 400;
+}
+
+.quicktech-id-btn{
+  padding: 3px 10px;
+  font-size: 14px;
+  margin: 10px 0;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.521);
+  border-radius: 10px;
+}
+
+.quicktech-after{
+  position: relative;
+
+}
+.quicktech-after::after{
+  position: absolute;
+  content: '';
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.055);
+}
+
+.img-thumbnail{
+  width: 12%;
+}
+
+.hidden {
+  display: none;
+}
+.address-card {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.btn-default {
+  background-color: #20c997;
+  color: white;
+}
+.btn-default:hover {
+  background-color: #198754;
+}
+.form-container {
+  padding: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.back-link {
+  color: #dc3545;
+  cursor: pointer;
+}
+.back-link:hover {
+  text-decoration: underline;
+}
+
+#address-book h2{
+  font-size: 20px;
+font-family: "Noto Sans", sans-serif;
+font-weight: 500;
+}
+
+.quikctech-num p {
+border: 1px solid #1865f2;
+width: 150px;
+padding: 10px;
+border-radius: 10px;
+font-size: 13px;
+margin-top: -33px;
+background-color: white;
+  color: #1865f2;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+}
+.quicktech-address-dflex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.qucitech-old-add{
+font-size: 15px;
+font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  color: #1865f2;
+}
+
+.quicktech-default{
+  padding: 5px 10px;
+  font-size: 13px;
+font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  background-color: #1865f2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.quicktech-default:hover{
+  background-color:rgba(54, 187, 202, 0.6) ;
+}
+
+.quicktech-edit-btn{
+  border: none;
+  background-color: transparent;
+ 
+  
+}
+.quicktech-edit-btn i{
+  font-size: 17px;
+  color: #ddd;
+  padding-left: 5px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.quicktech-edit-btn i:hover{
+
+  color: #1865f2;
+}
+.quicktech-border{
+  padding: 20px;
+ border: 2px solid #dddddd52;
+ border-radius: 10px;
+}
+
+.form-group label{
+  font-size: 16px !important;
+  font-family: "Noto Sans", sans-serif;
+      font-weight: 400 !important;
+      padding: 10px 0;
+}
+
+.quicktech-create-btn button {
+padding: 10px 20px;
+border: none;
+background-color: #1865f2;
+border-radius: 10px;
+  color: white;
+  transition: 0.4s;
+}
+.quicktech-create-btn button:hover{
+  background-color: rgba(54, 187, 202, 0.744);
+
+}
+
+.quicktech-add-address button{
+  padding: 5px 15px;
+  background-color: #1865f2;
+  font-size: 15px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  color: white;
+  transition: 0.4s;
+  border: none;
+}
+
+.quicktech-add-address button:hover{
+  background-color: rgba(54, 187, 202, 0.744);
+}
+.quicketch-pro-head{
+  font-size: 20px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+}
+.quicktech-change-pass{
+  background-color: transparent;
+  border-radius: none;
+box-shadow: none;
+border: none;
+}
+
+.quicktech-changepass-btn button{
+  padding: 15px 25px;
+  background-color: #1865f2;
+  font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  color: white;
+  transition: 0.4s;
+  border: none;
+  border-radius: 10px;
+}
+
+.quicktech-changepass-btn button:hover{
+  background-color: rgba(54, 187, 202, 0.744);
+}
+.quicktech-wish-img img{
+  width: 100px;
+  height: 100px;
+}
+
+.quicktech-wishlist-main{
+  padding: 30px;
+  background-color: #dddddd5f;
+  border-radius: 10px;
+}
+.quicktech-wish-col{
+  background-color: white;
+  border-radius: 10px;
+}
+
+.quicktech-wishlist-btn a{
+  padding: 10px 20px;
+  background-color: #1865f2;
+  font-size: 14px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  color: white;
+  transition: 0.4s;
+  border: none;
+  border-radius: 10px;
+}
+.quicktech-wishlist-btn a:hover{
+  background-color: rgba(54, 187, 202, 0.744);
+}
+
+
+.quicktech-orderdetails-head h2{
+  font-size: 23px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+}
+
+.quicktech-order-col{
+  background-color: #dddddd58;
+  padding: 30px;
+}
+
+.quicktech-order-id h4{
+  font-size: 14px;
+  padding-top: 4px;
+  color: black;
+}
+.quicktech-order-id button{
+  padding: 2px 10px;
+  font-size: 13px;
+  border: 1px solid rgba(0, 0, 0, 0.212);
+  background-color: transparent;
+  border-radius: 10px;
+  margin-left: 10px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+
+}
+.quicktech-od p{
+  font-size: 11px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.429);
+
+}
+
+.quicktech-orderdetails-price h4{
+  font-size: 24px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  color: #1865f2;
+}
+.quicktech-od-after{
+  position: relative;
+}
+.quicktech-od-after::after{
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.114);
+}
+
+.quicktech-orderdetails-cashon{
+  display: flex;
+  justify-content: space-between;
+}
+.quicktech-orderdetails-cashon h4{
+  font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  position: relative;
+}
+.progress-step {
+  width: 15%;
+  /* text-align: center; */
+  position: relative;
+}
+.progress-bar-custom {
+  position: absolute;
+  top: 12%;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background: #e0e0e0;
+  z-index: 1;
+  width: 87%;
+}
+.progress-step::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  display: inline-block;
+  z-index: 2;
+}
+.progress-step.active::before,
+.progress-step.completed::before {
+  background-color: #1865f2;
+}
+.progress-step.active .progress-bar-fill,
+.progress-step.completed .progress-bar-fill {
+  background-color: #1865f2;
+}
+.progress-bar-fill {
+  height: 8px;
+  background-color: #f76c6c;
+  width: 0%;
+  z-index: 3;
+  position: absolute;
+  top: 21%;
+  transform: translateY(-50%);
+}
+
+.progress-step span{
+ display: block;
+ font-size: 14px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+}
+
+.quicktech-order-status p{
+  background-color: white;
+  padding: 10px 0;
+  font-size: 14px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+}
+
+.quicktech-order-product{
+  background-color: white;
+}
+.quicktech-op{
+  border: none !important;
+}
+.quicktech-oppt h4{
+  font-size: 16px;
+width: 157px;
+font-family: "Noto Sans", sans-serif;
+font-weight: 500;
+color: #1865f2;
+}
+.quicktech-od-head h4{
+  font-size: 20px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+}
+.quicktech-s-content ul li{
+  font-size: 15px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+}
+
+.order-details, .shipping-address, .total-summary {
+  margin-top: 20px;
+}
+.order-item img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.total-row {
+  font-weight: bold;
+}
+
+.quicktech-del-after{
+  position: relative;
+}
+.quicktech-del-after::after{
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.quikctech-profile-course-img img{
+  width: 120px;
+
+}
+
+.quikctech-course-main-profile {
+	display: flex;
+	gap: 20px;
+	padding: 20px;
+	border: 1px solid #ddd;
+	background-color: #f7f7f7;
+	border-radius: 5px;
+	align-items: center;
+}
+
+.quicktech-profile-course-text h4{
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.quicktech-profile-course-text p{
+  color: black;
+  font-size: 15px;
+}
+
+.quikctech-course-view-brn-profile a{
+  padding: 4px 17px;
+  background-color: #002D62;
+  color: white;
+  font-weight: 600;
+  border-radius: 2px;
+  
+}
+
+.quikctech-course-view-brn-profile button{
+  border: none;
+  background-color: transparent;
+}
+
+/* Ensuring the dropdown menu is hidden by default */
+.dropdown-menu {
+  display: none !important;
+}
+
+/* Bootstrap's "show" class to display the dropdown */
+.dropdown-menu.show {
+  display: block !important;
+}
+/* profile */
+
+.quicktech-question-list {
+	background-color: #fffc;
+	padding: 19px 40px;
+	border-radius: 4px;
+}
+
+.quicktech-question-list li a{
+  color: black;
+}
+.quicktech-question-list li {
+  list-style-type: disc;
+  margin-bottom: 10px;
+}
+
+.quicktech-question-list h3{
+  text-align: center;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+
+.quicktech-nav-item.active a {
+	font-weight: bold;
+	color: white;
+	background-color: #1865f2;
+	border-radius: 5px;
+	padding: 3px 5px;
+}
+
+.quicktech-tick{
+  color: green !important;
+}
+
+.quikctech-recent-details{
+    width:100%;
+}
