@@ -5,6 +5,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\QuizController;
 use App\Http\Controllers\Api\SubscriptionController;
+use App\Models\{Student, PackageOrder, PackagePayment, Package};
+use Illuminate\Notifications\Notification;
+use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Validator;
 /*
 |--------------------------------------------------------------------------
@@ -156,4 +160,222 @@ Route::get('/send-sms', function (Request $request) {
 });
 
 Route::get('/all/packages', [SubscriptionController::class, 'allPackages']);
+
+Route::get('bkash/callback', function (Request $request) {
+    $paymentID = $request->get('paymentID');
+    $status = $request->get('status');
+
+    if ($status === 'failure') {
+        return view('bkash.fail', ['message' => 'Payment failed']);
+    }
+    if ($status === 'cancel') {
+        return view('bkash.fail', ['message' => 'Payment cancelled']);
+    }
+    if (!$paymentID) {
+        return view('bkash.fail', ['message' => 'Payment ID missing']);
+    }
+
+    $token = Cache::get('bkash_token_' . $paymentID);
+    $partnerId = Cache::get('bkash_partner_' . $paymentID);
+    $amount = Cache::get('bkash_amount_' . $paymentID);
+
+    if (!$token || !$partnerId) {
+        return view('bkash.fail', ['message' => 'Token or partner ID not found']);
+    }
+    //sandbox
+    // $base_url = 'https://tokenized.sandbox.bka.sh/v1.2.0-beta';
+
+    //Live
+  $base_url = 'https://tokenized.pay.bka.sh/v1.2.0-beta';
+
+    $headers = [
+        'Content-Type:application/json',
+        'Authorization:' . $token,
+        'X-APP-Key:' . env('BKASH_CHECKOUT_URL_APP_KEY')
+    ];
+    $body = json_encode(['paymentID' => $paymentID]);
+
+    $curl = curl_init($base_url . '/tokenized/checkout/execute');
+    curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+    curl_setopt($curl, CURLOPT_CUSTOMREQUEST, 'POST');
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl, CURLOPT_POSTFIELDS, $body);
+    curl_setopt($curl, CURLOPT_FOLLOWLOCATION, 1);
+    curl_setopt($curl, CURLOPT_IPRESOLVE, CURL_IPRESOLVE_V4);
+    $response = curl_exec($curl);
+
+    // dd($response);
+    curl_close($curl);
+
+    $arr = json_decode($response, true);
+
+    if (isset($arr['statusCode']) && $arr['statusCode'] !== '0000') {
+        return view('bkash.fail', ['message' => $arr['statusMessage'] ?? 'Unknown error']);
+    }
+
+    // // Save the payment
+    // PartnerTransection::create([
+    //     'name'       => 'Add Credit',
+    //     'partner_id' => $partnerId,
+    //     'paymentID' => $paymentID,
+    //     'trxID' => $arr['trxID'],
+    //     'token'      => $token,
+    //     'amount'     => $amount,
+    //     'type'       => 'credit',
+    //     'status'     => 'approved'
+    // ]);
+
+    // BalanceHistory::create([
+    //     'name'       => 'Add Credit',
+    //     'partner_id' => $partnerId,
+    //     'amount'     => $amount,
+    //     'added_by'   => $partnerId
+    // ]);
+
+    // Clear cache
+    Cache::forget('bkash_token_' . $paymentID);
+    Cache::forget('bkash_partner_' . $paymentID);
+    Cache::forget('bkash_amount_' . $paymentID);
+
+    // âœ… Return success page
+    return view('bkash.success', [
+        'amount'     => $amount,
+        'trxID'      => $arr['trxID'] ?? null,
+        'paymentID'  => $paymentID,
+        'message'    => 'Payment executed & credited successfully'
+    ]);
+})->name('api-bkash-callbackssss');
+Route::get('bkash/callback', function (Request $request) {
+
+    $paymentID = $request->paymentID;
+    $status = $request->status;
+
+    if ($status === 'failure') {
+        return view('bkash.fail', ['message' => 'Payment failed']);
+    }
+    if ($status === 'cancel') {
+        return view('bkash.fail', ['message' => 'Payment cancelled']);
+    }
+
+    if (!$paymentID) {
+        return view('bkash.fail', ['message' => 'Payment ID missing']);
+    }
+
+    $token = Cache::get('bkash_token_' . $paymentID);
+    $student_id = Cache::get('bkash_student_' . $paymentID);
+    $package_id = Cache::get('bkash_package_' . $paymentID);
+    $amount = Cache::get('bkash_amount_' . $paymentID);
+
+    if (!$token || !$student_id || !$package_id) {
+        return view('bkash.fail', ['message' => 'Missing payment data']);
+    }
+
+    $headers = [
+        'Content-Type:application/json',
+        'Authorization:' . $token,
+        'X-APP-Key:' . env('BKASH_CHECKOUT_URL_APP_KEY')
+    ];
+
+    $body = json_encode(['paymentID' => $paymentID]);
+
+    // $curl = curl_init('https://tokenized.pay.bka.sh/v1.2.0-beta/tokenized/checkout/execute');
+    $curl = curl_init('https://tokenized.sandbox.bka.sh/v1.2.0-beta/tokenized/checkout/execute');
+
+    curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+    curl_setopt($curl, CURLOPT_CUSTOMREQUEST, 'POST');
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl, CURLOPT_POSTFIELDS, $body);
+    $response = curl_exec($curl);
+    curl_close($curl);
+
+    $arr = json_decode($response, true);
+
+    if (!isset($arr['statusCode']) || $arr['statusCode'] !== '0000') {
+        return view('bkash.fail', ['message' => $arr['statusMessage'] ?? 'Unknown error']);
+    }
+
+    // ðŸ”¥ STEP 1: INSERT PackagePayment
+    $payment = PackagePayment::create([
+        'student_id' => $student_id,
+        'package_id' => $package_id,
+        'total_amount' => $amount,
+        'invoice_no' => 'Ittadi' . mt_rand(10000000, 99999999),
+        'order_date' => now()->format('d F Y'),
+        'order_month' => now()->format('F'),
+        'order_year' => now()->format('Y'),
+        'trxID' => $arr['trxID'],
+        'paymentID' => $paymentID,
+        // 'trxID' => $arr['trxID'],
+        'token'      => $token,
+        'payment_method' => 'Bkash',
+        'status' => 1
+    ]);
+
+    // ðŸ”¥ STEP 2: UPDATE PackageOrder or create new
+    $package = Package::find($package_id);
+    $expired_at = now()->addMonths($package->duration_month);
+
+    PackageOrder::updateOrCreate(
+        [
+            'student_id' => $student_id
+        ],
+        [
+            'package_payment_id' => $payment->id,
+            'package_id' => $package_id,
+            'expired_at' => $expired_at
+        ]
+    );
+
+    // ✅ STEP 3: SEND PUSH NOTIFICATION + SAVE TO DB
+$student = Student::find($student_id);
+
+if ($student) {
+
+    $title = 'Package Purchased Successfully 🎉';
+    $body  = 'Your package has been activated successfully.';
+
+    // 🔔 Save notification in DB
+    Notification::create([
+        'title'   => $title,
+        'body'    => $body,
+        'user_id' => $student->id,
+    ]);
+
+    // 🔔 Send Firebase push notification
+    if ($student->device_token) {
+        try {
+            $firebase = new FirebaseService ();
+
+            $firebase->sendNotification(
+                $student->device_token,
+                $title,
+                $body
+
+            );
+        } catch (\Exception $e) {
+            Log::error('Firebase push failed', [
+                'student_id' => $student->id,
+                'error'      => $e->getMessage()
+            ]);
+        }
+    }
+}
+
+    // Cleanup cache
+    Cache::forget('bkash_token_' . $paymentID);
+    Cache::forget('bkash_student_' . $paymentID);
+    Cache::forget('bkash_package_' . $paymentID);
+    Cache::forget('bkash_amount_' . $paymentID);
+
+    return view('bkash.success', [
+        'amount' => $amount,
+        'trxID' => $arr['trxID'],
+        'paymentID' => $paymentID,
+        'message' => 'Payment Successful'
+    ]);
+})->name('api-bkash-callback');
+
+Route::post('/bkash/create', [SubscriptionController::class, 'apicreatePayment']);
+// Route::get('bkash/callback', [PartnerController::class, 'apiCallback'])->name('api-bkash-callback');
+Route::post('bkash/execute', [SubscriptionController::class, 'apiExecutePayment']);
 
